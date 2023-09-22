@@ -10,6 +10,7 @@ function background(){
      * alterar o background do body para a cor #BECCC3.
      */
 
+    document.body.style.backgroundColor = "#BECCC3";
 }
 
 /**
@@ -25,6 +26,13 @@ function show(){
       * Recupera os valores dos campos de texto cujo o id='fname' e id='lname' e apresente o nome
       * e o sobrenome de uma pessoa (separado por um espaço) na div id='result'
       */
+
+     var firstname = document.getElementById("fname").value;
+     var lastname = document.getElementById("lname").value;
+
+     var fullname = firstname + " " + lastname;
+
+     document.getElementById("result").innerHTML = fullname;
 }
 
 /**
